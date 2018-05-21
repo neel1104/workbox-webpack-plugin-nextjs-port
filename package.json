@@ -1,0 +1,49 @@
+{
+  "name": "workbox-webpack-plugin-nextjs-port",
+  "version": "1.0.0",
+  "description": "A plugin for your Webpack build process, helping you generate a manifest of local files that workbox-sw should precache. Added support to make work with next js.",
+  "keywords": [
+    "workbox",
+    "workboxjs",
+    "webpack",
+    "service worker",
+    "caching",
+    "fetch requests",
+    "offline",
+    "file manifest",
+    "nextjs",
+    "next"
+  ],
+  "scripts": {
+    "build": "babel src -d dist",
+    "version": "npm run build",
+    "prepare": "npm run build"
+  },
+  "workbox": {
+    "packageType": "node"
+  },
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "json-stable-stringify": "^1.0.1",
+    "workbox-build": "^3.2.0"
+  },
+  "peerDependencies": {
+    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0",
+    "next": "^5.0.0 || ^6.0.0"
+  },
+  "author": "Neelesh Sharma <neelesh110493@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "neel1104/workbox-webpack-plugin-nextjs-port",
+  "bugs": "https://github.com/neel1104/workbox-webpack-plugin-nextjs-port/issues",
+  "homepage": "https://github.com/neel1104/workbox-webpack-plugin-nextjs-port",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
